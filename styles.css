@@ -1,0 +1,433 @@
+
+@import url(https://fonts.googleapis.com/css?family=Yeseva+One);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
+
+
+/* CSS reset rules */
+
+html, body {
+	height: 100%;
+	min-height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend, caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+
+/* Fonts and colors */
+
+body {
+	font-family: 'Josefin Sans', serif;
+	color: rgba(0, 0, 0, 0.8);
+}
+h1, h2, h3, h4, h5, h6, header {
+	font-family: 'Yeseva One', sans-serif;
+}
+article {
+}
+header {
+	
+	transition: border-bottom-color 1s ease;
+}
+header a {
+	color: rgba(0, 0, 0, 0.8);
+}
+aside {
+	background: #FAFAFA;
+}
+aside p {
+	border: 1px solid #bbb;
+	background: #ddd;
+	color: black;
+}
+footer a {
+	color: rgba(0, 0, 0, 0.8);
+}
+a {
+	color: #F80002;
+}
+
+
+/* Positioning and margins */
+
+@media (min-width: 1100px) {
+	body {
+		width: 1100px;
+		margin: 0 auto;
+	}
+}
+
+article {
+	padding: 50px 15px;
+}
+article > *:first-child {
+	margin-top: 0;
+}
+aside {
+	padding: 50px 15px;
+}
+header .right {
+	float: right;
+	margin: 0 10px 15px;
+}
+
+
+/* Header */
+header {
+	height: 30px;
+	margin-top: 5px;
+}
+ ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ li {
+	display: inline;
+	vertical-align:middle;
+}
+header li:first-child {
+	margin: 0;
+}
+header li a {
+	margin: 0 10px;
+}
+header li.logo {
+	font-size: 36px;
+}
+header a {
+	text-decoration: none;
+}
+
+
+/* Aside */
+
+
+
+/* Footer */
+
+footer {
+	padding: 5px 15px;
+	height: 80px;
+}
+
+
+/* Text styles and margins */
+
+p {
+	margin-bottom: 15px;
+}
+h1 {
+	font-size: 36px;
+	margin: 40px 0 20px;
+}
+h2 {
+	font-size: 32px;
+	margin: 30px 0 15px;
+}
+h3 {
+	font-size: 28px;
+	margin;
+}
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0 10px;
+}
+h5 {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 15px 0 10px;
+}
+ {
+	font-weight:lighter;
+	margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+  body.works_on_smartphone {
+  	display: block;
+  }
+  body.works_on_smartphone main {
+  	display: block;
+  }
+  header .right {
+  	float: none;
+  }
+}
+
+/* image JS challenge */
+
+img {
+	max-width: 100%;
+}
+
+img.small {
+	width: 100px;
+}
+
+a{
+color:red;
+}
+
+body{
+
+}
+
+main{
+display: flex;
+flex-direction: column;
+
+}
+
+.Slides-1{
+	display: none;
+	flex-direction: row;
+	flex:auto;
+	height: 15em;
+	width:auto;
+	flex-wrap: wrap;
+	background-image: url("image 4.jpeg");
+	background-size:cover;
+	background-repeat: no-repeat;
+margin-top: 5px;
+clear: both;
+	justify-content: center;
+	align-items: center;
+	animation-name: fadelement;
+	animation-duration: 2s;
+}
+.Slides-2{
+	display: none;
+	flex-direction: row;
+	flex:auto;
+	height: 15em;
+	width:auto;
+	flex-wrap: wrap;
+	background-image: url("image 20.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+margin-top: 5px;
+clear: both;
+	justify-content: center;
+	align-items: center;
+	animation-name: fadelement;
+	animation-duration: 2s;
+	
+}
+@keyframes fadelement{
+	from {opacity:.4}
+	to{ opacity: 1}
+
+}
+.Slides-3{
+	display: none;
+	flex-direction: row;
+	flex:auto;
+	height: 15em;
+	width:auto;
+	flex-wrap: wrap;
+	background-image: url("image 14.jpeg");
+	background-size:cover;
+	background-repeat: no-repeat;
+margin-top: 5px;
+clear: both;
+	justify-content: center;
+	align-items: center;
+	animation-name: fadelement;
+	animation-duration: 2s;
+	
+}
+
+
+.grid-container{
+display:grid;
+grid-template-columns:auto auto auto auto auto;
+grid-template-rows: 50% 50%;
+grid-gap:10px;
+justify-content: center;
+margin-right: 30px;
+margin-left:30px;
+}
+.grid-item img{
+	border-color: palegoldenrod;
+	border-width: 3px;
+	border-style: solid;	
+}
+
+.below_background{
+	display:grid;
+	grid-template-columns:auto auto auto;
+	border-bottom: thin solid black;
+	height: auto;
+	justify-content: center;
+	grid-gap: 200px;
+	padding-bottom: 17px;
+}
+
+nav{
+    position: absolute;
+	right:0px;
+	top: 50px;
+	
+}
+.brand{
+    position: absolute;
+	left:0px;
+	top: 50px;
+	
+}
+span.email{
+    
+}
+span{
+	
+}
+
+#search-text-input{
+	border: thin solid #e5e5e5;
+	border-left: 0px;
+	height:17px;
+	padding: .4em 0 .4em .6em;
+	width: 400px;
+	margin-right: 3px;
+	border-radius:0 30px 30px 0;
+	float: right;
+	}
+
+#button-holder{
+	height:29px;
+	width:50px;
+	cursor:pointer;
+	border: thin solid #e5e5e5;
+	border-right: 0px;
+	border-radius:10px 0 0 10px;
+float: right;
+background: none;
+}
+
+.float_it{
+	float: right;
+	margin-right:10px;
+}
+.center_text{
+text-align: center;	
+}
+
+.courses{
+	margin-right:7px ;
+	font-weight: bold;
+	font-size: medium;
+}
+.checked{
+	color:orange;
+}
+.grid-container-2{
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: auto auto;
+	margin: 0 30px 0 30px;
+	grid-gap: 15px;
+}
+
+.grid-item-2{
+	border-color: palegoldenrod;
+	border-width: 3px;
+	border-style: solid;
+}
+tr,td, th{
+	padding:20px;
+	padding-left: 0;
+}
+span.blue-class:first-child{
+	color: blue;
+}
+tr.footer-table-row{
+	background-color: #F80002;
+	
+	
+}
+td.footer-table-column{
+	height: 2px;
+	
+}
+.blur{
+	filter: blur(5px);
+	
+	
+
+}
+form{
+	border:3px solid #f1f1f1;
+}
+.forminput{
+	width:100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+button:hover{
+	opacity:0.5;
+}
+.container{
+	padding:15px;
+}
+span.psw{
+	float:right;
+	padding-top: 16px;
+}
+.cancelbtn{
+	width:auto;
+	padding:10px 18px;
+	background-color: #f44336;
+}
+#overlay{
+	width:500px;
+	height:150px;
+	position:absolute;
+	Top: 100px;
+	left: 270px;
+}
+button.login-button{
+	background-color: #04AA6D;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border:none;
+	cursor: pointer;
+	width:100%;
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Bighousecare-homepage
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="styles.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body class="works_on_smartphone" >
+    <div id="main_container">
+<header style="padding: 0 7px;">
+  <!--
+  <img href="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" alt="display image"/>
+  
+<ul class="nav">
+<li><a href="/personal finance">
+</a></li>
+<li><a href="/personal finance">
+personal finance</a></li>
+<li><a href="/personal finance">
+personal finance</a></li>
+<li><a href="/personal finance">
+personal finance</a></li>
+</ul>
+-->
+
+<!-- this code doesn't act as expected
+<div id="button-holder" class="fa fa-search"></div>
+<input type="text" placeholder="search for anything" id="search-text-input"/>
+-->
+
+<button class="float_it" style="margin-right:2px; padding: 3px 2px; color: white; background-color:mediumblue; border-radius: 1px; border-color: black; border-width: 1px;" > Sign up</button>
+<button class="float_it" onclick="dosomething(1)" style="margin-right:2px; margin-left:3px; padding: 3px 2px; border-radius: 1px; border-color: black; border-width: 1px; background-color: white;">Log in</button>
+<i class="fas fa-shopping-cart" style="float: right;"></i>
+<span class="float_it" style="color: darkslategrey; font-size: small; padding:5px 0; margin-left:3px; margin-right:6px;">Consultations</span>
+<span class="float_it" style="padding:5px 0; font-size: small; color: darkslategrey; margin-left:3px; margin-right: 3px;">See a Sample</span>
+<input type="text" placeholder="search for anything" id="search-text-input"/>
+<button id="button-holder" class="fa fa-search" style="color: gray;"></button>
+<i class="fa fa-telegram" aria-hidden="true" style="float:left; padding:5px 0"></i>
+<i class="fa fa-facebook-square" aria-hidden="true" style="float:left; padding:5px 0"></i>
+<i class="fa fa-camera-retro" aria-hidden="true" style="float:left; padding:5px 0"></i>
+<i class="fa fa-twitter" aria-hidden="true" style="float:left; padding:5px 0"></i>
+<i class="fa fa-youtube-play" aria-hidden="true" style="float:left; padding:5px 0"></i>
+<div class="float_it dropdown" onmouseover="whenhover(1)" onmouseout="nothover(1)" style=" margin-left:8px;color: darkslategrey; display: inline; font-size:small; float:left; padding:5px 0;">Categories
+<div id="category-menu" style="display:none; font-size: small; padding: 0; margin:0; position: absolute; top:15px; left:70px; background-color: cornsilk;">
+  <ul>
+    <li id="housemenu" onmouseover="whenhover(0)" onmouseout="nothover(0)" style="display: block; margin:0; width:150px;">House furniture
+    <ul id="sub-menu" style="display: none; padding:10px; position: absolute; top: 1px; left: 130px; background-color:cornsilk;">
+      <li style="display: block; margin:5px;">Different alternatives</li>
+      <li style="display: block; margin:5px;">franchising furniture</li>
+      <li style="display: block; margin:5px;">making it fun</li>
+    </ul>
+  </li>
+    <li style="display: block; margin:5px; width:150px;">Office Aesthetics</li>
+    <li style="display: block; margin:5px;">Room Decor</li>
+    <li style="display: block; margin:5px;">Office Comfy</li>
+    <li style="display: block; margin:5px;">Table Architecture</li>
+    <li style="display: block; margin:5px;">Sitting Minimalist</li>
+    <li style="display: block; margin:5px;">Table Architecture</li>
+    <li style="display: block; margin:5px;">Sitting Minimalist</li>
+    <li style="display: block; margin:5px;">Room Decor</li>
+    <li style="display: block; margin:5px;">House furniture</li>
+    <li style="display: block; margin:5px;">Office Comfy</li>
+  </ul>
+</div>
+</div>
+</header>
+<main>
+   
+<article class="mySlides Slides-1">
+  <!--tried to float list items below, didn't work-->
+  <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
+BigHousecare
+  </div>
+  <nav>
+    <ul class="float">
+      <li><button style="border:none; color: white;  background-color: transparent;" ><a style="text-decoration: none; color: white;" href="/personal finance">
+      book an appointment</a></button></li>
+      <li><button style="background: none; color: white;  border:1px solid white;"><a  style="text-decoration:none; color: white;"href="/personal finance">
+      member</a></button></li>
+      </ul>
+      </nav>
+      <div class="center_text">
+      <h3 style="color: white;">Tomorrow is for the Taking</h3>
+      <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
+      <button style="height:20px; width:15em; color: white; background-color: teal;">Get started for free</button>
+    </div>
+</article>
+<article class="mySlides Slides-2">
+  <!--tried to float list items below, didn't work-->
+  <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
+    BigHousecare
+      </div>
+  <nav>
+    <ul class="float">
+      <li><button style="border:none; color: white; background-color: transparent;"><a style="text-decoration: none; color:white"href="/personal finance">
+      book an appointment</a></button></li>
+      <li><button style="background: none; color: white;  border:1px solid white;"><a style="text-decoration:none; color: white;" href="/personal finance">
+      member</a></button></li>
+      </ul>
+      </nav>
+      <div class="center_text">
+      <h3 style="color: white;">Tomorrow is for the Taking</h3>
+      <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
+      <button style="height:20px; width:15em; background-color:teal;">Get started for free</button>
+    </div>
+</article>
+<article class="mySlides Slides-3">
+ <!-- tried to float list items below, didn't work-->
+ <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
+  BigHousecare
+    </div>
+  <nav>
+    <ul class="float">
+      <li><button style="border:none; color: white;  background-color: transparent;"><a style="text-decoration: none; color: white;" href="/personal finance">
+      book an appointment</a></button></li>
+      <li><button style="background: none; color: white;  border:1px solid white;"><a style="text-decoration: none; color: white;" href="/personal finance">
+      member</a></button></li>
+      </ul>
+      </nav>
+      <div class="center_text">
+      <h3 style="color: white;">Tomorrow is for the Taking</h3>
+      <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
+      <button style="height:20px; width:15em; background-color:teal;">Get started for free</button>
+    </div>
+</article>
+
+<div class="below_background">
+  <span style="font-size:12px; margin-top:17px;">
+    <span class="fa fa-book"  style="float:left; margin: 8px; color: darkcyan;"></span><strong>Over 3000 professionals</strong></br> enjoy a variety of professionals</span>
+  <span style="font-size:12px; margin-top:17px;"><span class="fa fa-book"  style="float:left; margin: 8px;"></span><strong>Over 2 million refrences</strong></br>zero need for servicess outside the confinemn</span>
+  <span style="font-size:12px; margin-top:17px;"><span class="fa fa-book"  style="float:left; margin: 8px; color: darkcyan;"></span><strong>Top professionals</strong></br> free insurance assements for low income</span>
+  
+</div>
+<div style="margin-left:30px; margin-top:50px;">
+  <h4>Unlimited Access to more than 30000 Interior Experts</h4>
+  <p style="color:grey; font-size:medium;">Choose from the 350000 Interior designers certified from the top design schools</p>
+  <button style="color: white; background-color: teal; display: block;">Explore more</button>
+  </div>
+  <div style="margin-left:30px; font-size:medium; margin-bottom: 15px; margin-top: 25px;">
+    <span class="courses" >Business</span>
+    <span class="courses">Design</span>
+    <span class="courses">Interior Photography</span>
+    <span class="courses">Development</span>
+    <span class="courses">Marketing</span>
+    <span class="courses">House Infrastructure</span>
+    <span class="courses">Personal Aesthetics</span>
+    <span class="courses">Design Only</span>
+  </div>
+  
+<div style="border:3px solid palegoldenrod; margin-left:30px; margin-right:30px; padding-top:20px;">
+  <h6 style="margin-left: 30px; margin-bottom: 5px ; font-weight:bold;">Expand your career opportunities with Python</h6>
+  <p style="margin-left: 30px; width:500px; height:49px; overflow-y:hidden;">Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills... you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was developed upon the premise that there should be only one way (and preferably one obvious way) to do things, a philosophy that has resulted in a strict level of code standardization. The core programming language is quite small and the standard library is also large. In fact, Python's large library is one of its greatest benefits, providing a variety of different tools for programmers suited for many different tasks.
+</p>
+<div class="grid-container">
+<div class="grid-item"><img src="pictures\image 19.jpeg" style="height: 170px; width: 170px;">
+<div>
+<span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to the Interior Design Service World</strong></span>
+<span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+<span style="font-size:12px;"><strong>4.6</strong><span class="fa fa-star checked"></span><i style="font-size: x-small;">
+(3173899)</i></span>
+<span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+  $94.99</s></span>
+<span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+</div>
+</div>
+<div class="grid-item"><img src="pictures\image 3.jpeg" style="height: 170px; width: 170px;">
+  <div>
+  <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+  <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+  <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+    (3173899)</i></span>
+    <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+      $94.99</s></span>
+    <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+    </div>
+    </div>
+    
+<div class="grid-item"><img src="pictures\image 11.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 17.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 6.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 5.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 16.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 3.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    
+<div class="grid-item"><img src="pictures\image 4.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    <div class="grid-item"><img src="pictures\image 4.jpeg" style="height: 170px; width: 170px;">
+  <div>
+    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+    <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+    <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+    </div>
+    
+    
+    </div>       
+
+<div style="margin-top:60px;"><h3 style="font-size:large; margin-left:30px; margin-bottom: 30px;">Your Favorites</h3></div>
+    <div class="grid-container">
+      <div class="grid-item"><img src="pictures\image 8.jpeg" style="height: 270px; width: 270px;">
+      <div>
+      <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+      <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+      <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+      (3173899)</i></span>
+      <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+        $94.99</s></span>
+      <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+      </div>
+      </div>
+      <div class="grid-item"><img src="pictures\image 2.jpeg" style="height: 270px; width: 270px;">
+        <div>
+        <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+        <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+        <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+          (3173899)</i></span>
+          <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+            $94.99</s></span>
+          <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+          </div>
+          </div>
+          
+      <div class="grid-item"><img src="pictures\image 6.jpeg" style="height: 270px; width: 270px;">
+        <div>
+          <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+          <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+          <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+            (3173899)</i></span>
+            <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+              $94.99</s></span>
+            <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+            </div>
+            </div>
+            <div class="grid-item"><img src="pictures\image 15.jpeg" style="height: 270px; width: 270px;">
+              <div>
+              <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+              <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+              <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+                (3173899)</i></span>
+                <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+                  $94.99</s></span>
+                <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+                </div>
+                </div>
+                
+            <div class="grid-item"><img src="pictures\image 16.jpeg" style="height: 270px; width: 270px;">
+              <div>
+                <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+                <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
+                <span style="font-size:12px;"><strong>4.6</strong><i style="font-size: x-small;">
+                  (3173899)</i></span>
+                  <span style="font-size: medium; display: block;"><strong>$12.99</strong><s style="color:grey;">
+                    $94.99</s></span>
+                  <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
+                  </div>
+                  </div>
+      
+    </div>
+    <h5 style="margin-left:30px; margin-top: 40px; margin-bottom: 25px;">Top Categories</h5>
+    <div class="grid-container-2">
+      <div class="grid-item-2"><img src="pictures\image 9.jpeg" style="height: 280px; width: 280px;">
+        <div>
+        <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+      
+        </div>
+        </div>
+        <div class="grid-item-2"><img src="pictures\image 19.jpeg" style="height: 280px; width: 280px;">
+          <div>
+          <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+            </div>
+            </div>
+            
+        <div class="grid-item-2"><img src="pictures\image 17.jpeg" style="height: 280px; width: 280px;">
+          <div>
+            <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction Interior Design Service World</strong></span>
+              </div>
+              </div>
+              <div class="grid-item-2"><img src="pictures\image 16.jpeg" style="height: 280px; width: 280px;">
+                <div>
+                <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+                  </div>
+                  </div>
+                  <div class="grid-item-2"><img src="pictures\image 5.jpeg" style="height: 280px; width: 280px;">
+                    <div>
+                    <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Healthcare Service World in Technology</strong></span>
+                  
+                    </div>
+                    </div>
+                    <div class="grid-item-2"><img src="pictures\image 1.jpeg" style="height: 280px; width: 280px;">
+                      <div>
+                      <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+                        </div>
+                        </div>
+                        
+                    <div class="grid-item-2"><img src="pictures\image 12.jpeg" style="height: 280px; width: 280px;">
+                      <div>
+                        <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+                          </div>
+                          </div>
+                          <div class="grid-item-2"><img src="pictures\image 13.jpeg" style="height: 280px; width: 280px;">
+                            <div>
+                            <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
+                              </div>
+                              </div>
+                              
+    </div>
+    <h5 style="margin-left:30px; margin-top:30px;">Featured Topics by Category</h5>
+  <table style="margin-left:30px;margin-right:30px; margin-top:30px;">
+    <tr>
+      <th style="text-align: left;">Development</th>
+      <th style="text-align: left;">Business</th>
+      <th style="text-align: left;">Material</th>
+      <th style="text-align: left;">Design</th>
+    </tr>
+    <tr>
+      <td><span class="blue-class">Project</span><span style="display:block; margin:8px; margin-left:0;">28713356 students</span></td>
+      <td>Art Project<span style="display:block; margin:8px; margin-left:0;">28713356 students</span></td>
+      <td>Landscape</td>
+      <td>Design</td>
+    </tr>
+    <tr>
+      <td>Landscape</td>
+      <td>Spectrum</td>
+      <td>Shape and size</td>
+      <td>Graphic Design</td>
+    </tr>
+    <tr>
+      <td>Space Planning</td>
+      <td>PMP</td>
+      <td>Retail</td>
+      <td>Drawing</td>
+    </tr>
+  </table>
+  <div><button style="background-color: blue; color:aliceblue; margin-left: 30px; margin-top:20px;">Explore More</button></div> 
+    <div style="height: 250px; background-color: honeydew; margin-top: 70px; position: relative;">
+      <img src="images (8).jpeg" style="height:320px; width: 350px; position:absolute; left:120px; top:-35px;">
+      <div style="width:30%; transform:translate(500px,30px);">
+        <h2>Become an instructor</h2>
+        <p>Instructors from around the world teach millions of students on Big Housecare. We provide the tools and skills to teach what you love.</p>
+        <button style="display:block; color: aliceblue; background-color: blue;"><strong>Start Learning today</strong></button>
+      </div>
+    </div> 
+    <div style="height: 100px; background-color: honeydew; margin-top: 70px; position: relative; text-align: center ; padding-bottom: 50px;">
+      <h4>Trusted by companies of all sizes</h4>
+<div>
+  <img src="volkswagen-7.svg" style="height:35px; padding:10px;">
+  <img src="159971.svg" style="height:35px; padding:10px ;">
+  <img src="370857.svg" style="height:35px; padding:10px;">
+  <img src="mercedes-benz-9.svg" style="height:35px; padding:10px;">
+  <img src="159971.svg" style="height:35px; padding:10px ;">
+</div>
+    </div>
+    <div style="height: 250px; background-color:mistyrose; margin-top: 70px; position: relative;">
+      <img src="images (9).jpeg" style="height:320px; width: 350px; transform:translate(600px,-30px); ">
+      <div style="width:30%; position:absolute; left:250px; top:30px;">
+        <h2>Become an instructor</h2>
+        <p>Instructors from around the world teach millions of students on Big Housecare. We provide the tools and skills to teach what you love.</p>
+        <button style="display:block; color: aliceblue; background-color: blue;"><strong>Start teaching today</strong></button>
+      </div>
+    </div>
+    <div style="height: 350px; background-color:ghostwhite; margin-top: 70px; position: relative; border:0.1px solid grey;">
+      <embed src="production ID_3773486.mp4" autostart="true" height="50" width="80" style="width:40%; height:85%; margin-left:100px; margin-top:25px;"/>
+      <div style="width:30%;  position: absolute; top:90px; left:600px;">
+        <h3><strong>Transform your life through education</strong></h3>
+        <p>Mohamad Alaloush launched a new career in software development by taking courses on Big Housecare. What will you be able to do?</p>
+        
+      </div>
+    </div>
+    <!-- table3 should have some padding or margin somewhere messing around 
+    <div>
+      <table style="margin-left:30px; margin-top:30px; font-size:71%; font-style:oblique;">
+        <tr class="footer-table-row">
+          <td>28713356 students</td>
+          <td>Financial Analysis</td>
+          <td>AWS Certification</td>
+          <td>Design</td>
+        </tr>
+        <tr>
+          <td>Web development</td>
+          <td>SQL</td>
+          <td>Ethical Hacking</td>
+          <td>Graphic Design</td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td>PMP</td>
+          <td>Cyber Security</td>
+          <td>Drawing</td>
+        </tr>
+        <tr>
+        <td>Web development</td>
+        <td>SQL</td>
+        <td>Ethical Hacking</td>
+        <td>Graphic Design</td>
+      </tr>
+      <tr>
+        <td>Machine Learning</td>
+        <td>PMP</td>
+        <td>Cyber Security</td>
+        <td>Drawing</td>
+      </tr>
+      <tr>
+        <td>
+          cyber Security
+        </td>
+      </tr>
+      
+      </table>      
+
+    -->
+    
+  </main>
+  <footer style="position:relative; height: 270px;">
+    <div style="margin-top:40px; margin-left:40px;">
+  
+    <ul style="float:left; margin-right:130px;">
+      <li style="display:block; margin:8px;">Space Planning</li>
+      <li style="display:block; margin:8px;">Retail Design</li>
+      <li style="display:block; margin:8px;">Drawing</li>
+      <li style="display:block; margin:8px;">Retail Design</li>
+      <li style="display:block; margin:8px;">Retail Design</li>
+    </ul>
+  
+  
+    <ul style="float:left; margin-right:130px;">
+      <li style="display:block; margin:8px;">28713356 students</li>
+      <li style="display:block;">Space Planning</li>
+      <li style="display:block;">Commercial Design</li>
+      <li style="display:block;">Space Planning</li>
+      <li style="display:block;">Graphics and Drawing</li>
+    </ul>
+    <ul style="float:left; margin-right:130px;" >
+      <li style="display:block;">28713356 students</li>
+      <li style="display:block;">Graphics and Drawing</li>
+      <li style="display:block;">Consultancy</li>
+      <li style="display:block;">Research and development</li>
+      <li style="display:block;">Get Connected with Info</li>
+    </ul>
+    <button style="float:right; margin-right: 20px;"><img src="volkswagen-7.svg"style="height: 10px;">English</button>
+    <span style="clear:both; position: absolute; left: 60px; top: 220px;"><img src="volkswagen-7.svg" height="10px">BadassFurniture</span>
+    <span style="position:absolute; right:0; top:220px; margin-right: 40px; font-size: x-small;"><img src="volkswagen-7.svg" height="10px">All rights reserved</span>
+  </div>
+</footer>
+</div>
+<div id="overlay" style="display:none;">
+  <form action="" method="post">
+    <div class="imgcontainer">
+</div>
+<div class="container">
+  <label for="uname"><strong>Username</strong></label>
+  <input type="text" placeholder="Enter Usename" name="uname" required class="forminput">
+  <label for="psw"><strong>Password</strong></label>
+  <input type="password" placeholder="Enter Password" name="psw" required class="forminput">
+
+<button class="login-button" type="submit">Login</button>
+<label for="remember">Remember me</label>
+    <input type="checkbox" checked="checked" name="remember" class="forminput">
+  </div>
+  <div class="container">
+    <button type="button" class="cancelbtn" onclick="dosomething(0)">
+      Cancel
+    </button>
+    <span class="psw">Forgot<a href="">password?</a></span>
+
+  </div>
+  </form>
+</div>
+  </body>
+<script src="behavior.js"></script>
+</html>
+
+
+
+
+
+

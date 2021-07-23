@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
   <head>
     <title>
       Bighousecare-homepage
@@ -7,31 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<link href="styles.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
   </head>
-  <body class="works_on_smartphone" >
+  <body>
     <div id="main_container">
 <header style="padding: 0 7px;">
-  <!--
-  <img href="https://alx-apply.hbtn.io/brand_alx/alx-logo.png" alt="display image"/>
-  
-<ul class="nav">
-<li><a href="/personal finance">
-</a></li>
-<li><a href="/personal finance">
-personal finance</a></li>
-<li><a href="/personal finance">
-personal finance</a></li>
-<li><a href="/personal finance">
-personal finance</a></li>
-</ul>
-
- this code doesn't act as expected
-<div id="button-holder" class="fa fa-search"></div>
-<input type="text" placeholder="search for anything" id="search-text-input"/>
--->
 
 <button class="float_it" style="margin-right:2px; padding: 3px 2px; color: white; background-color:mediumblue; border-radius: 1px; border-color: black; border-width: 1px;" > Sign up</button>
 <button class="float_it" onclick="dosomething(1)" style="margin-right:2px; margin-left:3px; padding: 3px 2px; border-radius: 1px; border-color: black; border-width: 1px; background-color: white;">Log in</button>
@@ -46,7 +27,7 @@ personal finance</a></li>
 <i class="fa fa-twitter" aria-hidden="true" style="float:left; padding:5px 0"></i>
 <i class="fa fa-youtube-play" aria-hidden="true" style="float:left; padding:5px 0"></i>
 <div class="float_it dropdown" onmouseover="whenhover(1)" onmouseout="nothover(1)" style=" margin-left:8px;color: darkslategrey; display: inline; font-size:small; float:left; padding:5px 0;">Categories
-<div id="category-menu" style="display:none; font-size: small; padding: 0; margin:0; position: absolute; top:15px; left:70px; background-color: cornsilk;">
+<div id="category-menu" style="display:none; font-size: small; padding: 0; margin:0; position: absolute; top:15px; left:70px; background-color: cornsilk; z-index: 6;">
   <ul>
     <li id="housemenu" onmouseover="whenhover(0)" onmouseout="nothover(0)" style="display: block; margin:0; width:150px;">House furniture
     <ul id="sub-menu" style="display: none; padding:10px; position: absolute; top: 1px; left: 130px; background-color:cornsilk;">
@@ -72,7 +53,6 @@ personal finance</a></li>
 <main>
    
 <article class="mySlides Slides-1">
-  <!--tried to float list items below, didn't work-->
   <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
 BigHousecare
   </div>
@@ -80,18 +60,17 @@ BigHousecare
     <ul class="float">
       <li><button style="border:none; color: white;  background-color: transparent;" ><a style="text-decoration: none; color: white;" href="/personal finance">
       book an appointment</a></button></li>
-      <li><button style="background: none; color: white;  border:1px solid white;"><a  style="text-decoration:none; color: white;"href="/personal finance">
+      <li><button style="background: none; margin-right: 5px; color: white;  border:1px solid white;"><a  style="text-decoration:none; color: white;"href="/personal finance">
       member</a></button></li>
       </ul>
       </nav>
       <div class="center_text">
       <h3 style="color: white;">Tomorrow is for the Taking</h3>
       <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
-      <button style="height:20px; width:15em; color: white; background-color: teal;">Get started for free</button>
+      <button onclick="dosomething(1)" style="height:20px; width:15em; color: white; background-color: teal;">Get started for free</button>
     </div>
 </article>
 <article class="mySlides Slides-2">
-  <!--tried to float list items below, didn't work-->
   <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
     BigHousecare
       </div>
@@ -99,18 +78,17 @@ BigHousecare
     <ul class="float">
       <li><button style="border:none; color: white; background-color: transparent;"><a style="text-decoration: none; color:white"href="/personal finance">
       book an appointment</a></button></li>
-      <li><button style="background: none; color: white;  border:1px solid white;"><a style="text-decoration:none; color: white;" href="/personal finance">
+      <li><button style="background: none; margin-right: 5px; color: white;  border:1px solid white;"><a style="text-decoration:none; color: white;" href="/personal finance">
       member</a></button></li>
       </ul>
       </nav>
       <div class="center_text">
       <h3 style="color: white;">Tomorrow is for the Taking</h3>
       <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
-      <button style="height:20px; width:15em; background-color:teal;">Get started for free</button>
+      <button  onclick="dosomething(1)"  style="height:20px; width:15em; background-color:teal;">Get started for free</button>
     </div>
 </article>
 <article class="mySlides Slides-3">
- <!-- tried to float list items below, didn't work-->
  <div class="brand" style=" color:thistle; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: large;  font-style: italic; font-weight: bold; padding: 15px; color: white;">
   BigHousecare
     </div>
@@ -118,14 +96,14 @@ BigHousecare
     <ul class="float">
       <li><button style="border:none; color: white;  background-color: transparent;"><a style="text-decoration: none; color: white;" href="/personal finance">
       book an appointment</a></button></li>
-      <li><button style="background: none; color: white;  border:1px solid white;"><a style="text-decoration: none; color: white;" href="/personal finance">
+      <li><button style="background: none; margin-right: 5px; color: white;  border:1px solid white;"><a style="text-decoration: none; color: white;" href="/personal finance">
       member</a></button></li>
       </ul>
       </nav>
       <div class="center_text">
       <h3 style="color: white;">Tomorrow is for the Taking</h3>
       <p style="color: white;">Book an appointment with the most professional team at Big Housecare now</p>
-      <button style="height:20px; width:15em; background-color:teal;">Get started for free</button>
+      <button onclick="dosomething(1)" style="height:20px; width:15em; background-color:teal;">Get started for free</button>
     </div>
 </article>
 
@@ -157,7 +135,7 @@ BigHousecare
   <p style="margin-left: 30px; width:500px; height:49px; overflow-y:hidden;">Whether you work in machine learning or finance, or are pursuing a career in web development or data science, Python is one of the most important skills... you can learn. Python's simple syntax is especially suited for desktop, web, and business applications. Python's design philosophy emphasizes readability and usability. Python was developed upon the premise that there should be only one way (and preferably one obvious way) to do things, a philosophy that has resulted in a strict level of code standardization. The core programming language is quite small and the standard library is also large. In fact, Python's large library is one of its greatest benefits, providing a variety of different tools for programmers suited for many different tasks.
 </p>
 <div class="grid-container">
-<div class="grid-item"><img src="pictures\image 19.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 19.jpeg" style="height: 170px; width: 100%;">
 <div>
 <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to the Interior Design Service World</strong></span>
 <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -168,7 +146,7 @@ BigHousecare
 <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
 </div>
 </div>
-<div class="grid-item"><img src="pictures\image 3.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 3.jpeg" style="height: 170px; width: 100%;">
   <div>
   <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
   <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -180,7 +158,7 @@ BigHousecare
     </div>
     </div>
     
-<div class="grid-item"><img src="pictures\image 11.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 11.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -192,7 +170,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 17.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 17.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -204,7 +182,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 6.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 6.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -217,7 +195,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 5.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 5.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -229,7 +207,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 16.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 16.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -241,7 +219,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 3.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 3.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -253,7 +231,7 @@ BigHousecare
       </div>
       </div>
     
-<div class="grid-item"><img src="pictures\image 4.jpeg" style="height: 170px; width: 170px;">
+<div class="grid-item"><img src="resources/pictures/image 4.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -264,7 +242,7 @@ BigHousecare
       <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
       </div>
       </div>
-    <div class="grid-item"><img src="pictures\image 4.jpeg" style="height: 170px; width: 170px;">
+    <div class="grid-item"><img src="resources/pictures/image 4.jpeg" style="height: 170px; width: 100%;">
   <div>
     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
     <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -282,7 +260,7 @@ BigHousecare
 
 <div style="margin-top:60px;"><h3 style="font-size:large; margin-left:30px; margin-bottom: 30px;">Your Favorites</h3></div>
     <div class="grid-container">
-      <div class="grid-item"><img src="pictures\image 8.jpeg" style="height: 270px; width: 270px;">
+      <div class="grid-item"><img src="resources/pictures/image 8.jpeg" style="height: 270px; width: 100%;">
       <div>
       <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
       <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -293,7 +271,7 @@ BigHousecare
       <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
       </div>
       </div>
-      <div class="grid-item"><img src="pictures\image 2.jpeg" style="height: 270px; width: 270px;">
+      <div class="grid-item"><img src="resources/pictures/image 2.jpeg" style="height: 270px; width: 100%;">
         <div>
         <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
         <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -305,7 +283,7 @@ BigHousecare
           </div>
           </div>
           
-      <div class="grid-item"><img src="pictures\image 6.jpeg" style="height: 270px; width: 270px;">
+      <div class="grid-item"><img src="resources/pictures/image 6.jpeg" style="height: 270px; width: 100%;">
         <div>
           <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
           <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -316,7 +294,7 @@ BigHousecare
             <span style="font-size:10px; display: block;"><button style="font-size:10px; margin-top: 5px;">Bestseller</button></span>
             </div>
             </div>
-            <div class="grid-item"><img src="pictures\image 15.jpeg" style="height: 270px; width: 270px;">
+            <div class="grid-item"><img src="resources/pictures/image 15.jpeg" style="height: 270px; width: 100%;">
               <div>
               <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
               <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -328,7 +306,7 @@ BigHousecare
                 </div>
                 </div>
                 
-            <div class="grid-item"><img src="pictures\image 16.jpeg" style="height: 270px; width: 270px;">
+            <div class="grid-item"><img src="resources/pictures/image 16.jpeg" style="height: 270px; width: 100%;">
               <div>
                 <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
                 <span style="display: block; font-size:x-small; margin-top: 4px;">China tour</span>
@@ -343,46 +321,46 @@ BigHousecare
     </div>
     <h5 style="margin-left:30px; margin-top: 40px; margin-bottom: 25px;">Top Categories</h5>
     <div class="grid-container-2">
-      <div class="grid-item-2"><img src="pictures\image 9.jpeg" style="height: 280px; width: 280px;">
+      <div class="grid-item-2"><img src="resources/pictures/image 9.jpeg" style="height: 280px; width: 100%;">
         <div>
         <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
       
         </div>
         </div>
-        <div class="grid-item-2"><img src="pictures\image 19.jpeg" style="height: 280px; width: 280px;">
+        <div class="grid-item-2"><img src="resources/pictures/image 19.jpeg" style="height: 280px; width: 100%;">
           <div>
           <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
             </div>
             </div>
             
-        <div class="grid-item-2"><img src="pictures\image 17.jpeg" style="height: 280px; width: 280px;">
+        <div class="grid-item-2"><img src="resources/pictures/image 17.jpeg" style="height: 280px; width: 100%;">
           <div>
             <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction Interior Design Service World</strong></span>
               </div>
               </div>
-              <div class="grid-item-2"><img src="pictures\image 16.jpeg" style="height: 280px; width: 280px;">
+              <div class="grid-item-2"><img src="resources/pictures/image 16.jpeg" style="height: 280px; width: 100%;">
                 <div>
                 <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
                   </div>
                   </div>
-                  <div class="grid-item-2"><img src="pictures\image 5.jpeg" style="height: 280px; width: 280px;">
+                  <div class="grid-item-2"><img src="resources/pictures/image 5.jpeg" style="height: 280px; width: 100%;">
                     <div>
                     <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Healthcare Service World in Technology</strong></span>
                   
                     </div>
                     </div>
-                    <div class="grid-item-2"><img src="pictures\image 1.jpeg" style="height: 280px; width: 280px;">
+                    <div class="grid-item-2"><img src="resources/pictures/image 1.jpeg" style="height: 280px; width: 100%;">
                       <div>
                       <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
                         </div>
                         </div>
                         
-                    <div class="grid-item-2"><img src="pictures\image 12.jpeg" style="height: 280px; width: 280px;">
+                    <div class="grid-item-2"><img src="resources/pictures/image 12.jpeg" style="height: 280px; width: 100%;">
                       <div>
                         <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
                           </div>
                           </div>
-                          <div class="grid-item-2"><img src="pictures\image 13.jpeg" style="height: 280px; width: 280px;">
+                          <div class="grid-item-2"><img src="resources/pictures/image 13.jpeg" style="height: 280px; width: 100%;">
                             <div>
                             <span style="display: block; font-size:smaller; margin-top: 4px;"><strong>An Introduction to Interior Design Service World</strong></span>
                               </div>
@@ -418,8 +396,8 @@ BigHousecare
   </table>
   <div><button style="background-color: blue; color:aliceblue; margin-left: 30px; margin-top:20px;">Explore More</button></div> 
     <div style="height: 250px; background-color: honeydew; margin-top: 70px; position: relative;">
-      <img src="images (8).jpeg" style="height:320px; width: 350px; position:absolute; left:120px; top:-35px;">
-      <div style="width:30%; transform:translate(500px,30px);">
+      <img src="resources/pictures/images (8).jpeg" style="height:320px; width: 350px; position:absolute; left:10%; top:-35px;">
+      <div style="width:30%; position:absolute; left:40%; top:10%;">
         <h2>Become an instructor</h2>
         <p>Instructors from around the world teach millions of students on Big Housecare. We provide the tools and skills to teach what you love.</p>
         <button style="display:block; color: aliceblue; background-color: blue;"><strong>Start Learning today</strong></button>
@@ -428,71 +406,29 @@ BigHousecare
     <div style="height: 100px; background-color: honeydew; margin-top: 70px; position: relative; text-align: center ; padding-bottom: 50px;">
       <h4>Trusted by companies of all sizes</h4>
 <div>
-  <img src="volkswagen-7.svg" style="height:35px; padding:10px;">
-  <img src="159971.svg" style="height:35px; padding:10px ;">
-  <img src="370857.svg" style="height:35px; padding:10px;">
-  <img src="mercedes-benz-9.svg" style="height:35px; padding:10px;">
-  <img src="159971.svg" style="height:35px; padding:10px ;">
+  <img src="resources/icons/volkswagen-7.svg" style="height:35px; padding:10px;">
+  <img src="resources/icons/159971.svg" style="height:35px; padding:10px ;">
+  <img src="resources/icons/370857.svg" style="height:35px; padding:10px;">
+  <img src="resources/icons/mercedes-benz-9.svg" style="height:35px; padding:10px;">
+  <img src="resources/icons/159971.svg" style="height:35px; padding:10px ;">
 </div>
     </div>
     <div style="height: 250px; background-color:mistyrose; margin-top: 70px; position: relative;">
-      <img src="images (9).jpeg" style="height:320px; width: 350px; transform:translate(600px,-30px); ">
-      <div style="width:30%; position:absolute; left:250px; top:30px;">
+      <img src="resources/pictures/images (9).jpeg" style="height:320px; width: 350px; position:absolute; left:51%; top:-35px; ">
+      <div style="width:30%; position:absolute; left:20%; top:5%;">
         <h2>Become an instructor</h2>
         <p>Instructors from around the world teach millions of students on Big Housecare. We provide the tools and skills to teach what you love.</p>
         <button style="display:block; color: aliceblue; background-color: blue;"><strong>Start teaching today</strong></button>
       </div>
     </div>
     <div style="height: 350px; background-color:ghostwhite; margin-top: 70px; position: relative; border:0.1px solid grey;">
-      <embed src="production ID_3773486.mp4" autostart="true" height="50" width="80" style="width:40%; height:85%; margin-left:100px; margin-top:25px;"/>
-      <div style="width:30%;  position: absolute; top:90px; left:600px;">
+      <embed src="resources/video/production ID_3773486.mp4" autostart="true" height="50" width="80" style="width:40%; height:85%; margin-left:100px; margin-top:25px;"/>
+      <div style="width:30%;  position: absolute; top:90px; left:55%;">
         <h3><strong>Transform your life through education</strong></h3>
         <p>Mohamad Alaloush launched a new career in software development by taking courses on Big Housecare. What will you be able to do?</p>
         
       </div>
     </div>
-    <!-- table3 should have some padding or margin somewhere messing around 
-    <div>
-      <table style="margin-left:30px; margin-top:30px; font-size:71%; font-style:oblique;">
-        <tr class="footer-table-row">
-          <td>28713356 students</td>
-          <td>Financial Analysis</td>
-          <td>AWS Certification</td>
-          <td>Design</td>
-        </tr>
-        <tr>
-          <td>Web development</td>
-          <td>SQL</td>
-          <td>Ethical Hacking</td>
-          <td>Graphic Design</td>
-        </tr>
-        <tr>
-          <td>Machine Learning</td>
-          <td>PMP</td>
-          <td>Cyber Security</td>
-          <td>Drawing</td>
-        </tr>
-        <tr>
-        <td>Web development</td>
-        <td>SQL</td>
-        <td>Ethical Hacking</td>
-        <td>Graphic Design</td>
-      </tr>
-      <tr>
-        <td>Machine Learning</td>
-        <td>PMP</td>
-        <td>Cyber Security</td>
-        <td>Drawing</td>
-      </tr>
-      <tr>
-        <td>
-          cyber Security
-        </td>
-      </tr>
-      
-      </table>      
-
-    -->
     
   </main>
   <footer style="position:relative; height: 270px;">
@@ -509,26 +445,26 @@ BigHousecare
   
     <ul style="float:left; margin-right:130px;">
       <li style="display:block; margin:8px;">28713356 students</li>
-      <li style="display:block;">Space Planning</li>
-      <li style="display:block;">Commercial Design</li>
-      <li style="display:block;">Space Planning</li>
-      <li style="display:block;">Graphics and Drawing</li>
+      <li style="display:block; margin:8px;">Space Planning</li>
+      <li style="display:block; margin:8px;">Commercial Design</li>
+      <li style="display:block; margin:8px;">Space Planning</li>
+      <li style="display:block; margin:8px;">Graphics and Drawing</li>
     </ul>
     <ul style="float:left; margin-right:130px;" >
-      <li style="display:block;">28713356 students</li>
-      <li style="display:block;">Graphics and Drawing</li>
-      <li style="display:block;">Consultancy</li>
-      <li style="display:block;">Research and development</li>
-      <li style="display:block;">Get Connected with Info</li>
+      <li style="display:block; margin:8px;">28713356 students</li>
+      <li style="display:block; margin:8px;">Graphics and Drawing</li>
+      <li style="display:block; margin:8px;">Consultancy</li>
+      <li style="display:block; margin:8px;">Research and development</li>
+      <li style="display:block; margin:8px;">Get Connected with Info</li>
     </ul>
-    <button style="float:right; margin-right: 20px;"><img src="volkswagen-7.svg"style="height: 10px;">English</button>
-    <span style="clear:both; position: absolute; left: 60px; top: 220px;"><img src="volkswagen-7.svg" height="10px">BadassFurniture</span>
-    <span style="position:absolute; right:0; top:220px; margin-right: 40px; font-size: x-small;"><img src="volkswagen-7.svg" height="10px">All rights reserved</span>
+    <button style="float:right; margin-right: 20px;"><img src="resources/icons/volkswagen-7.svg"style="height: 10px;">English</button>
+    <span style="clear:both; position: absolute; left: 60px; top: 220px;"><img src="resources/icons/volkswagen-7.svg" height="10px">BadassFurniture</span>
+    <span style="position:absolute; right:0; top:220px; margin-right: 40px; font-size: x-small;"><img src="resources/icons/volkswagen-7.svg" height="10px">All rights reserved</span>
   </div>
 </footer>
 </div>
 <div id="overlay" style="display:none;">
-  <form action="" method="post">
+  <form action="" method="post" style="background:inherit;">
     <div class="imgcontainer">
 </div>
 <div class="container">
@@ -539,19 +475,19 @@ BigHousecare
 
 <button class="login-button" type="submit">Login</button>
 <label for="remember">Remember me</label>
-    <input type="checkbox" checked="checked" name="remember" class="forminput">
+    <input type="checkbox" checked="checked" name="remember">
   </div>
   <div class="container">
     <button type="button" class="cancelbtn" onclick="dosomething(0)">
       Cancel
     </button>
-    <span class="psw">Forgot<a href="">password?</a></span>
+    <span class="psw">Forgot<a href=""> password?</a></span>
 
   </div>
   </form>
 </div>
   </body>
-<script src="behavior.js"></script>
+<script src="js/behavior.js"></script>
 </html>
 
 

@@ -14,7 +14,7 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display="flex";
 }
-    setInterval(showSlides, 4000);
+    setInterval(showSlides, 20000);
     
     
    

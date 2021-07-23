@@ -3,12 +3,11 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700,700italic,400italic);
 
 
-/* CSS reset rules */
 
 html, body {
 	height: 100%;
 	min-height: 100%;
-width:100%;
+
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -29,25 +28,10 @@ time, mark, audio, video {
 	font: inherit;
 	
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	
-}
+
 body {
 	line-height: 1;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-
-/* Fonts and colors */
 
 body {
 	font-family: 'Josefin Sans', serif;
@@ -56,8 +40,7 @@ body {
 h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
-article {
-}
+
 header {
 	
 	transition: border-bottom-color 1s ease;
@@ -65,14 +48,7 @@ header {
 header a {
 	color: rgba(0, 0, 0, 0.8);
 }
-aside {
-	background: #FAFAFA;
-}
-aside p {
-	border: 1px solid #bbb;
-	background: #ddd;
-	color: black;
-}
+
 footer a {
 	color: rgba(0, 0, 0, 0.8);
 }
@@ -81,25 +57,19 @@ a {
 }
 
 
-/* Positioning and margins */
-
-
 }
 
 article {
 	padding: 50px 15px;
 }
 
-aside {
-	padding: 50px 15px;
-}
+
 header .right {
 	float: right;
 	margin: 0 10px 15px;
 }
 
 
-/* Header */
 header {
 	height: 30px;
 	margin-top: 5px;
@@ -127,19 +97,13 @@ header a {
 }
 
 
-/* Aside */
 
-
-
-/* Footer */
 
 footer {
 	padding: 5px 15px;
 	height: 80px;
 }
 
-
-/* Text styles and margins */
 
 p {
 	margin-bottom: 15px;
@@ -166,22 +130,8 @@ h5 {
 	font-weight: bold;
 	margin: 15px 0 10px;
 }
- {
-	font-weight:lighter;
-	margin: 5px 0;
-}
 
-@media (max-width: 800px) {
-  body.works_on_smartphone {
-  	display: block;
-  }
-  body.works_on_smartphone main {
-  	display: block;
-  }
-  header .right {
-  	float: none;
-  }
-}
+
 
 
 a{
@@ -205,7 +155,7 @@ flex-direction: column;
 	height: 15em;
 	width:100%
 	flex-wrap: wrap;
-	background-image: url("image 4.jpeg");
+	background-image: url("../resources/pictures/image 4.jpeg");
 	background-size:cover;
 	background-repeat: no-repeat;
 margin-top: 5px;
@@ -222,7 +172,7 @@ clear: both;
 	height: 15em;
 	width:auto;
 	flex-wrap: wrap;
-	background-image: url("image 20.jpg");
+	background-image: url("../resources/pictures/image 20.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
 margin-top: 5px;
@@ -245,7 +195,7 @@ clear: both;
 	height: 15em;
 	width:auto;
 	flex-wrap: wrap;
-	background-image: url("image 14.jpeg");
+	background-image: url("../resources/pictures/image 14.jpeg");
 	background-size:cover;
 	background-repeat: no-repeat;
 margin-top: 5px;
@@ -260,14 +210,13 @@ clear: both;
 
 .grid-container{
 display:grid;
-grid-template-columns:auto auto auto auto auto;
-grid-template-rows: 50% 50%;
+grid-template-columns:1fr 1fr 1fr 1fr 1fr;
 grid-gap:10px;
 justify-content: center;
 margin-right: 30px;
 margin-left:30px;
 }
-.grid-item img{
+.grid-item{
 	border-color: palegoldenrod;
 	border-width: 3px;
 	border-style: solid;	
@@ -342,8 +291,8 @@ text-align: center;
 }
 .grid-container-2{
 	display:grid;
-	grid-template-columns: auto auto auto auto;
-	grid-template-rows: auto auto;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1fr 1fr;
 	margin: 0 30px 0 30px;
 	grid-gap: 15px;
 }
@@ -405,8 +354,10 @@ span.psw{
 	width:500px;
 	height:150px;
 	position:absolute;
-	Top: 100px;
-	left: 270px;
+	Top: 25%;
+	left: 30%;
+	background: black;
+	color: white;
 }
 button.login-button{
 	background-color: #04AA6D;
